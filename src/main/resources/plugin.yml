@@ -1,0 +1,21 @@
+name: Economy
+main: xyz.guiand.mc.Economy.Economy
+version: 0.1
+author: Gui Andrade
+commands:
+  bank:
+    description: Bank management commands.
+    usage: /bank <buy|sell>
+    permission: economy.bank
+  buy:
+    description: Offer to buy an item.
+    usage: /buy <item> <amount> <price>
+  sell:
+    description: Offer to sell an item.
+    usage: /sell <item> <amount> <price>
+  balance:
+    description: Get your current Coin balance.
+    usage: /balance
+permissions:
+  economy.bank:
+    default: op
